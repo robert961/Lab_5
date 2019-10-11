@@ -174,14 +174,15 @@ function loadPlayersPage(){
 }
 
 function switchPlayers(playerNum){
-	document.getElementById("p_year").innerHTML=players[playerNum].year;
-	document.getElementById("p_major").innerHTML=players[playerNum].major;
-	document.getElementById("g_played").innerHTML=players[playerNum].games_played;
-	document.getElementById("player_img").src=players[playerNum].img;
 	document.getElementById("player_img").alt=players[playerNum].alt;
 	document.getElementById("p_yards").innerHTML=players[playerNum].pass_yards;
 	document.getElementById("r_yards").innerHTML=players[playerNum].rushing_yards;
 	document.getElementById("rec_yards").innerHTML=players[playerNum].receiving_yards;
+	document.getElementById("p_year").innerHTML=players[playerNum].year;
+	document.getElementById("p_major").innerHTML=players[playerNum].major;
+	document.getElementById("g_played").innerHTML=players[playerNum].games_played;
+	document.getElementById("player_img").src=players[playerNum].img;
+	
 
 	var p=Math.floor(players[playerNum].pass_yards/players[playerNum].games_played);
 	var rh=Math.floor(players[playerNum].rushing_yards/players[playerNum].games_played);
