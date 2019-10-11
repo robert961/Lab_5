@@ -183,13 +183,13 @@ function switchPlayers(playerNum){
 	document.getElementById("r_yards").innerHTML=players[playerNum].rushing_yards;
 	document.getElementById("rec_yards").innerHTML=players[playerNum].receiving_yards;
 
-	var pass=Math.floor(players[playerNum].pass_yards/players[playerNum].games_played);
-	var rush=Math.floor(players[playerNum].rushing_yards/players[playerNum].games_played);
-	var rec=Math.floor(players[playerNum].receiving_yards/players[playerNum].games_played);
+	var p=Math.floor(players[playerNum].pass_yards/players[playerNum].games_played);
+	var rh=Math.floor(players[playerNum].rushing_yards/players[playerNum].games_played);
+	var rc=Math.floor(players[playerNum].receiving_yards/players[playerNum].games_played);
 
-	document.getElementById("avg_p_yards").innerHTML=pass;
-	document.getElementById("avg_r_yards").innerHTML=rush;
-	document.getElementById("avg_rec_yards").innerHTML=rec;
+	document.getElementById("avg_p_yards").innerHTML=p;
+	document.getElementById("avg_r_yards").innerHTML=rh;
+	document.getElementById("avg_rec_yards").innerHTML=rc;
 
 
 }
